@@ -2,10 +2,14 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="TrainLog">
+<meta name="theme-color" content="#060d18">
 <title>TrainLog</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAADMElEQVR4nO3bsW0dUQxFQUXOnKv/atTVtxIBDGV4gSOaMwAbeHtPuG9vAAAAAAAAAAAAAAAAAAAAAAAAP8yv3++va1e/OT9IPUYBkKrHKABS9RgFQKoeowBI1WMUAKl6jAIgVY9RAKTqMQqAVD1GAZCqxygAUvUYBUCqHqMASNVjFACpeowCIFWPUQCk6jEKgFQ9RgGQqscoAFL1GAVAqh6jAEjVYxQAqXqMAiBVj1EApOoxCoBUPUYBkKrHKABS9RgFQKoeowBI1WMUAKl6jAIgVY9RAKTqMQqAVD1GAZCqxygAUvUYBUCqHqMASNVjFACpeowCIFWPUQCk6jEKgFQ9RgH8rz5eryevHo37RlgPf/N6wv9GAOdOAJMAzp0AJgGcOwFMAjh3ApgEcO4EMAng3AlgEsC5E8AkgHMngEkA504AkwDOnQAmAZw7AUwCOHcCmARw7gQwCeDcCWASwLkTwCSAcyeASQDnTgCTAM6dACYBnDsBTAI4dwKYBHDuBDA9/Rju3q1WP57bf6vVj+f232r147n9t1r9eG7/rVY/ntt/q9WP5/bfavXjuf23Wv14bv+tVj+e23+r1Y/n9t9q9eO5/bda/Xhu/61WP57bf6vVj+f232r147n9t1r9eG7/rfbwY9R/Ozl/hP0dAZw7AUwCOHcCmARw7gQwCeDcCWASwLkTwCSAcyeASQDnTgCTAM6dACYBnDsBTAI4dwKYBHDuBDAJ4NwJYBLAuRPAJIBzJ4BJAOdOAJMAzp0AJgGcOwFMAjh3ApgEcO4EMAng3AlgEsC5E8BC9WiSocKXeowCIFWPUQCk6jEKgFQ9RgGQqscoAFL1GAVAqh6jAEjVYxQAqXqMAiBVj1EApOoxCoBUPUYBkKrHKABS9RgFQKoeowBI1WMUAKl6jAIgVY9RAKTqMQqAVD1GAZCqxygAUvUYBUCqHqMASNVjFACpeowCIFWPUQCk6jEKgFQ9RgGQqscoAFL1GAVAqh6jAEjVYxQAqXqMAiBVj1EApOoxCoBUPUYBkKrHKABS9RgFQKoeowBI1WMUAKl6jAIAAAAAAAAAAAAAAAAAAAAAAODTH4GjGa3pFe0kAAAAAElFTkSuQmCC">
+<link rel="manifest" href="data:application/json;base64,eyJuYW1lIjogIlRyYWluTG9nIiwgInNob3J0X25hbWUiOiAiVHJhaW5Mb2ciLCAiZGVzY3JpcHRpb24iOiAiUmVnaXN0cm8gZGUgZW50cmVuYW1pZW50byBlbiBlbCBnaW1uYXNpbyIsICJzdGFydF91cmwiOiAiLiIsICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjMDYwZDE4IiwgInRoZW1lX2NvbG9yIjogIiMwNjBkMTgiLCAib3JpZW50YXRpb24iOiAicG9ydHJhaXQiLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFNQUFBQURBQ0FZQUFBQlMzR3dIQUFBRE1FbEVRVlI0bk8zYnNXMGRVUXhGUVVYT25Ldi9hdFRWdHhJQkRHVjRnU09hTXdBYmVIdFB1Rzl2QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUDh5djMrK3ZhMWUvT1Q5SVBVWUJrS3JIS0FCUzlSZ0ZRS29lb3dCSTFXTVVBS2w2akFJZ1ZZOVJBS1RxTVFxQVZEMUdBWkNxeHlnQVV2VVlCVUNxSHFNQVNOVmpGQUNwZW93Q0lGV1BVUUNrNmpFS2dGUTlSZ0dRcXNjb0FGTDFHQVZBcWg2akFFalZZeFFBcVhxTUFpQlZqMUVBcE9veENvQlVQVVlCa0tySEtBQlM5UmdGUUtvZW93QkkxV01VQUtsNmpBSWdWWTlSQUtUcU1RcUFWRDFHQVpDcXh5Z0FVdlVZQlVDcUhxTUFTTlZqRkFDcGVvd0NJRldQVVFDazZqRUtnRlE5UmdIOHJ6NWVyeWV2SG8zN1JsZ1BmL042d3Y5R0FPZE9BSk1BenAwQUpnR2NPd0ZNQWpoM0FwZ0VjTzRFTUFuZzNBbGdFc0M1RThBa2dITW5nRWtBNTA0QWt3RE9uUUFtQVp3N0FVd0NPSGNDbUFSdzdnUXdDZURjQ1dBU3dMa1R3Q1NBY3llQVNRRG5UZ0NUQU02ZEFDWUJuRHNCVEFJNGR3S1lCSER1QkRBOS9SanUzcTFXUDU3YmY2dlZqK2YyMzJyMTQ3bjl0MXI5ZUc3L3JWWS9udHQvcTlXUDUvYmZhdlhqdWYyM1d2MTRidit0VmorZTIzK3IxWS9uOXQ5cTllTzUvYmRhL1hodS82MVdQNTdiZjZ2VmorZjIzMnIxNDduOXQxcjllRzcvcmZid1k5Ui9PemwvaFAwZEFadzdBVXdDT0hjQ21BUnc3Z1F3Q2VEY0NXQVN3TGtUd0NTQWN5ZUFTUURuVGdDVEFNNmRBQ1lCbkRzQlRBSTRkd0tZQkhEdUJEQUo0TndKWUJMQXVSUEFKSUJ6SjRCSkFPZE9BSk1BenAwQUpnR2NPd0ZNQWpoM0FwZ0VjTzRFTUFuZzNBbGdFc0M1RThCQzlXaVNvY0tYZW93Q0lGV1BVUUNrNmpFS2dGUTlSZ0dRcXNjb0FGTDFHQVZBcWg2akFFalZZeFFBcVhxTUFpQlZqMUVBcE9veENvQlVQVVlCa0tySEtBQlM5UmdGUUtvZW93QkkxV01VQUtsNmpBSWdWWTlSQUtUcU1RcUFWRDFHQVpDcXh5Z0FVdlVZQlVDcUhxTUFTTlZqRkFDcGVvd0NJRldQVVFDazZqRUtnRlE5UmdHUXFzY29BRkwxR0FWQXFoNmpBRWpWWXhRQXFYcU1BaUJWajFFQXBPb3hDb0JVUFVZQmtLckhLQUJTOVJnRlFLb2Vvd0JJMVdNVUFLbDZqQUlBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT0RUSDRHakdhM3BGZTBrQUFBQUFFbEZUa1N1UW1DQyIsICJzaXplcyI6ICIxOTJ4MTkyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIn0sIHsic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBZ0FBQUFJQUNBWUFBQUQwZU5UNkFBQVBjVWxFUVZSNG5PM1dNUXBZVnd3QVFWZnUzT2YrcDhtdG5FcHRJRHpNZmtVenNEZVFoSDc4QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUDdGejE5Ly9aYStVTDBMQUtmVVIxK2E2bDBBT0tVKyt0SlU3d0xBS2ZYUmw2WjZGd0JPcVkrK05OVzdBSEJLZmZTbHFkNEZnRlBxb3k5TjlTNEFuRklmZldtcWR3SGdsUHJvUzFPOUN3Q24xRWRmbXVwZEFEaWxQdnJTVk84Q3dDbjEwWmVtZWhjQVRxbVB2alRWdXdCd1NuMzBwYW5lQllCVDZxTXZUZlV1QUp4U0gzMXBxbmNCNEpUNjZFdFR2UXNBcDlSSFg1cnFYUUE0cFQ3NjBsVHZBc0FwOWRHWHBub1hBRTZwajc0MDFic0FjRXA5OUtXcDNnV0FVK3FqTDAzMUxnQ2NVaDk5YWFwM0FlQ1UrdWhMVTcwTEFLZlVSMSthNmwwQU9LVSsrdEpVN3dMQUtmWFJsNlo2RndCT3FZKytOTlc3QUhCS2ZmU2xxZDRGZ0ZQcW95OU45UzRBbkZJZmZXbXFkd0hnbFByb1MxTzlDd0NuMUVkZm11cGRBRGlsUHZyU1ZPOEN3Q24xMFplbWVoY0FUcW1QdmpUVnV3QndTbjMwcGFuZUJZQlQ2cU12VGZVdUFKeFNIMzFwcW5jQjRKVDY2RXRUdlFzQXA5UkhYNXJxWFFBNHBUNzYwbFR2QXNBcDlkR1hwbm9YQUU2cGo3NDAxYnNBY0VwOTlLV3AzZ1dBVStxakwwMzFMZ0NjVWg5OWFhcDNBZUNVK3VoTFU3MExBS2ZVUjErYTZsMEFPS1UrK3RKVTd3TEFLZlhSbDZaNkZ3Qk9xWSsrTk5XN0FIQktmZlNscWQ0RmdGUHFveTlOOVM0QW5GSWZmV21xZHdIZ2xQcm9TMU85Q3dDbjFFZGZtdXBkQURpbFB2clNWTzhDd0NuMTBaZW1laGNBVHFtUHZqVFZ1d0J3U24zMHBhbmVCWUJUNnFNdlRmVXVBSnhTSDMxcHFuY0I0SlQ2NkV0VHZRc0FwOVJIWDVycVhRQTRwVDc2MGxUdkFzQXA5ZEdYcG5vWEFFNnBqNzQwMWJzQWNFcDk5S1dwM2dXQVUrcWpMMDMxTGdDY1VoOTlhYXAzQWVDVSt1aExVNzBMQUtmVVIxK2E2bDBBT0tVKyt0SlU3d0xBS2ZYUmw2WjZGd0JPcVkrK05OVzdBSEJLZmZTbHFkNEZnRlBxb3k5TjlTNEFuRklmZldtcWR3SGdsUHJvUzFPOUN3Q24xRWRmbXVwZEFEaWxQdnJTVk84Q3dDbjEwWmVtZWhjQVRxbVB2alRWdXdCd1NuMzBwYW5lQllCVDZxTXZUZlV1QUp4U0gzMXBxbmNCNEpUNjZFdFR2UXNBcDlSSFg1cnFYUUE0cFQ3NjBsVHZBc0FwOWRHWHBub1hBRTZwajc0MDFic0FjRXA5OUtXcDNnV0FVK3FqTDAzMUxnQ2NVaDk5YWFwM0FlQ1UrdWhMVTcwTEFLZlVSMSthNmwwQU9LVSsrdEpVN3dMQUtmWFJsNlo2RndCT3FZKytOTlc3QUhCS2ZmU2xxZDRGZ0ZQcW95OU45UzRBbkZJZmZXbXFkd0hnbFByb1MxTzlDd0NuMUVkZm11cGRBRGlsUHZyU1ZPOEN3Q24xMFplbWVoY0FUcW1QdmpUVnV3QndTbjMwcGFuZUJZQlQ2cU12VGZVdUFKeFNIMzFwcW5jQjRKVDY2RXRUdlF2QWYvSDM3OS8veCtwREtPbi9YWDNqL2xnY1VnK2JCMERTd3VvYjV3SGdYVDFzSGdCSkM2dHZuQWVBZC9Xd2VRQWtMYXkrY1I0QTN0WEQ1Z0dRdExENnhua0FlRmNQbXdkQTBzTHFHK2NCNEYwOWJCNEFTUXVyYjV3SGdIZjFzSGtBSkMyc3ZuRWVBTjdWdytZQmtMU3crc1o1QUhoWEQ1c0hRTkxDNmh2bkFlQmRQV3dlQUVrTHEyK2NCNEIzOWJCNUFDUXRyTDV4SGdEZTFjUG1BWkMwc1ByR2VRQjRWdytiQjBEU3d1b2I1d0hnWFQxc0hnQkpDNnR2bkFlQWQvV3dlUUFrTGF5K2NSNEEzdFhENWdHUXRMRDZ4bmtBZUZjUG13ZEEwc0xxRytjQjRGMDliQjRBU1F1cmI1d0hnSGYxc0hrQUpDMnN2bkVlQU43VncrWUJrTFN3K3NaNUFIaFhENXNIUU5MQzZodm5BZUJkUFd3ZUFFa0xxMitjQjRCMzliQjVBQ1F0ckw1eEhnRGUxY1BtQVpDMHNQckdlUUI0VncrYkIwRFN3dW9iNXdIZ1hUMXNIZ0JKQzZ0dm5BZUFkL1d3ZVFBa0xheStjUjRBM3RYRDVnR1F0TEQ2eG5rQWVGY1Btd2RBMHNMcUcrY0I0RjA5YkI0QVNRdXJiNXdIZ0hmMXNIa0FKQzJzdm5FZUFON1Z3K1lCa0xTdytzWjVBSGhYRDVzSFFOTEM2aHZuQWVCZFBXd2VBRWtMcTIrY0I0QjM5YkI1QUNRdHJMNXhIZ0RlMWNQbUFaQzBzUHJHZVFCNFZ3K2JCMERTd3VvYjV3SGdYVDFzSGdCSkM2dHZuQWVBZC9Xd2VRQWtMYXkrY1I0QTN0WEQ1Z0dRdExENnhua0FlRmNQbXdkQTBzTHFHK2NCNEYwOWJCNEFTUXVyYjV3SGdIZjFzSGtBSkMyc3ZuRWVBTjdWdytZQmtMU3crc1o1QUhoWEQ1c0hRTkxDNmh2bkFlQmRQV3dlQUVrTHEyK2NCNEIzOWJCNUFDUXRyTDV4SGdEZTFjUG1BWkMwc1ByR2VRQjRWdytiQjBEU3d1b2I1d0hnWFQxc0hnQkpDNnR2bkFlQWQvV3dlUUFrTGF5K2NSNEEzdFhENWdHUXRMRDZ4bmtBZUZjUG13ZEEwc0xxRytjQjRGMDliQjRBU1F1cmI1d0hnSGYxc0hrQUpDMnN2bkVlQU43VncrWUJrTFN3K3NaNUFIaFhENXNIUU5MQzZodm5BZUJkUFd5U3BPL0VJZld3U1pLK0U0ZlV3eVpKK2s0Y1VnK2JKT2s3Y1VnOWJKS2s3OFFoOWJCSmtyNFRoOVRESmtuNlRoeFNENXNrNlR0eFNEMXNrcVR2eENIMXNFbVN2aE9IMU1NbVNmcE9IRklQbXlUcE8zRklQV3lTcE8vRUlmV3dTWksrRTRmVXd5WkorazRjVWcrYkpPazdjVWc5YkpLazc4UWg5YkJKa3I0VGg5VERKa242VGh4U0Q1c2s2VHR4U0Qxc2txVHZ4Q0gxc0VtU3ZoT0gxTU1tU2ZwT0hGSVBteVRwTzNGSVBXeVNwTy9FSWZXd1NaSytFNGZVd3laSitrNGNVZytiSk9rN2NVZzliSktrNzhRaDliQkprcjRUaDlUREprbjZUaHhTRDVzazZUdHhTRDFza3FUdnhDSDFzRW1TdmhPSDFNTW1TZnBPSEZJUG15VHBPM0ZJUFd5U3BPL0VJZld3U1pLK0U0ZlV3eVpKK2s0Y1VnK2JKT2s3Y1VnOWJKS2s3OFFoOWJCSmtyNFRoOVRESmtuNlRoeFNENXNrNlR0eFNEMXNrcVR2eENIMXNFbVN2aE9IMU1NbVNmcE9IRklQMngvcTU2Ky9KT21QVmQ4NER3RHY2bUh6QUVoYVdIM2pQQUM4cTRmTkF5QnBZZldOOHdEd3JoNDJENENraGRVM3pnUEF1M3JZUEFDU0ZsYmZPQThBNytwaDh3QklXbGg5NHp3QXZLdUh6UU1nYVdIMWpmTUE4SzRlTmcrQXBJWFZOODREd0x0NjJEd0FraFpXM3pnUEFPL3FZZk1BU0ZwWWZlTThBTHlyaDgwRElHbGg5WTN6QVBDdUhqWVBnS1NGMVRmT0E4QzdldGc4QUpJV1Z0ODREd0R2Nm1IekFFaGFXSDNqUEFDOHE0Zk5BeUJwWWZXTjh3RHdyaDQyRDRDa2hkVTN6Z1BBdTNyWVBBQ1NGbGJmT0E4QTcrcGg4d0JJV2xoOTR6d0F2S3VIelFNZ2FXSDFqZk1BOEs0ZU5nK0FwSVhWTjg0RHdMdDYyRHdBa2haVzN6Z1BBTy9xWWZNQVNGcFlmZU04QUx5cmg4MERJR2xoOVkzekFQQ3VIallQZ0tTRjFUZk9BOEM3ZXRnOEFKSVdWdDg0RHdEdjZtSHpBRWhhV0gzalBBQzhxNGZOQXlCcFlmV044d0R3cmg0MkQ0Q2toZFUzemdQQXUzcllQQUNTRmxiZk9BOEE3K3BoOHdCSVdsaDk0endBdkt1SHpRTWdhV0gxamZNQThLNGVOZytBcElYVk44NER3THQ2MkR3QWtoWlczemdQQU8vcVlmTUFTRnBZZmVNOEFMeXJoODBESUdsaDlZM3pBUEN1SGpZUGdLU0YxVGZPQThDN2V0ZzhBSklXVnQ4NER3RHY2bUh6QUVoYVdIM2pQQUM4cTRmTkF5QnBZZldOOHdEd3JoNDJENENraGRVM3pnUEF1M3JZUEFDU0ZsYmZPQThBNytwaDh3QklXbGg5NHp3QXZLdUh6UU1nYVdIMWpmTUE4SzRlTmcrQXBJWFZOODREd0x0NjJEd0FraFpXM3pnUEFPL3FZZk1BU0ZwWWZlTThBTHlyaDgwRElHbGg5WTN6QVBDdUhqWVBnS1NGMVRmT0E4QzdldGc4QUpJV1Z0ODREd0R2Nm1IekFFaGFXSDNqUEFDOHE0Zk5BeUJwWWZXTjh3RHdyaDQyRDRDa2hkVTN6Z1BBdTNyWVBBQ1NGbGJmT0E4QTcrcGg4d0JJV2xoOTR6d0F2S3VIelFNZ2FXSDFqZk1BOEs0ZU5nK0FwSVhWTjg0RHdMdDYyRHdBa2haVzN6Z1BBTy9xWWZNQVNGcFlmZU04QU1DUCtoQktVNzBMQUtmVVIxK2E2bDBBT0tVKyt0SlU3d0xBS2ZYUmw2WjZGd0JPcVkrK05OVzdBSEJLZmZTbHFkNEZnRlBxb3k5TjlTNEFuRklmZldtcWR3SGdsUHJvUzFPOUN3Q24xRWRmbXVwZEFEaWxQdnJTVk84Q3dDbjEwWmVtZWhjQVRxbVB2alRWdXdCd1NuMzBwYW5lQllCVDZxTXZUZlV1QUp4U0gzMXBxbmNCNEpUNjZFdFR2UXNBcDlSSFg1cnFYUUE0cFQ3NjBsVHZBc0FwOWRHWHBub1hBRTZwajc0MDFic0FjRXA5OUtXcDNnV0FVK3FqTDAzMUxnQ2NVaDk5YWFwM0FlQ1UrdWhMVTcwTEFLZlVSMSthNmwwQU9LVSsrdEpVN3dMQUtmWFJsNlo2RndCT3FZKytOTlc3QUhCS2ZmU2xxZDRGZ0ZQcW95OU45UzRBbkZJZmZXbXFkd0hnbFByb1MxTzlDd0NuMUVkZm11cGRBRGlsUHZyU1ZPOEN3Q24xMFplbWVoY0FUcW1QdmpUVnV3QndTbjMwcGFuZUJZQlQ2cU12VGZVdUFKeFNIMzFwcW5jQjRKVDY2RXRUdlFzQXA5UkhYNXJxWFFBNHBUNzYwbFR2QXNBcDlkR1hwbm9YQUU2cGo3NDAxYnNBY0VwOTlLV3AzZ1dBVStxakwwMzFMZ0NjVWg5OWFhcDNBZUNVK3VoTFU3MExBS2ZVUjErYTZsMEFPS1UrK3RKVTd3TEFLZlhSbDZaNkZ3Qk9xWSsrTk5XN0FIQktmZlNscWQ0RmdGUHFveTlOOVM0QW5GSWZmV21xZHdIZ2xQcm9TMU85Q3dDbjFFZGZtdXBkQURpbFB2clNWTzhDd0NuMTBaZW1laGNBVHFtUHZqVFZ1d0J3U24zMHBhbmVCWUJUNnFNdlRmVXVBSnhTSDMxcHFuY0I0SlQ2NkV0VHZRc0FwOVJIWDVycVhRQTRwVDc2MGxUdkFzQXA5ZEdYcG5vWEFFNnBqNzQwMWJzQWNFcDk5S1dwM2dXQVUrcWpMMDMxTGdDY1VoOTlhYXAzQWVDVSt1aExVNzBMQUtmVVIxK2E2bDBBT0tVKyt0SlU3d0xBS2ZYUmw2WjZGd0JPcVkrK05OVzdBSEJLZmZTbHFkNEZnRlBxb3k5TjlTNEFuRklmZldtcWR3SGdsUHJvUzFPOUN3Q24xRWRmbXVwZEFEaWxQdnJTVk84Q3dDbjEwWmVtZWhjQVRxbVB2alRWdXdCd1NuMzBwYW5lQllCVDZxTXZUZlV1QUp4U0gzMXBxbmNCNEpUNjZFdFR2UXNBcDlSSFg1cnFYUUE0cFQ3NjBsVHZBc0FwOWRHWHBub1hBRTZwajc0MDFic0FjRXA5OUtXcDNnV0FVK3FqTDAzMUxnQ2NVaDk5YWFwM0FlQ1UrdWhMVTcwTEFLZlVSMSthNmwwQU9LVSsrdEpVN3dMQUtmWFJsNlo2RndCT3FZKytOTlc3QUhCS2ZmU2xxZDRGZ0ZQcW95OU45UzRBbkZJZmZXbXFkd0hnbFByb1MxTzlDd0NuMUVkZm11cGRBRGlsUHZyU1ZPOEN3Q24xMFplbWVoY0FUcW1QdmpUVnV3QndTbjMwcGFuZUJZQlQ2cU12VGZVdUFKeFNIMzFwcW5jQjRKVDY2RXRUdlFzQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFzTVkvSEN1cjdxczVjVEVBQUFBQVNVVk9SSzVDWUlJPSIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIn1dfQ==">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
@@ -29,28 +33,27 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
   html, body { height: 100%; background: var(--bg-deep); color: var(--text); font-family: 'Barlow', sans-serif; overflow: hidden; }
-
-  /* ── App shell ── */
   #app { display: flex; flex-direction: column; height: 100dvh; max-width: 480px; margin: 0 auto; position: relative; }
 
-  /* ── Header ── */
+  /* Header */
   header {
-    padding: 14px 18px 10px;
+    padding: 12px 16px 10px;
     display: flex; justify-content: space-between; align-items: center;
     border-bottom: 1px solid var(--border2);
     background: var(--bg-deep);
     flex-shrink: 0;
   }
+  .logo-wrap { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 32px; height: 32px; }
   .logo { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 900; letter-spacing: 0.06em; }
   .logo span { color: var(--cyan); }
   .header-date { font-size: 11px; color: var(--text-dim); letter-spacing: 0.08em; font-family: 'Barlow Condensed', sans-serif; }
+  .header-right { display:flex; align-items:center; gap:10px; }
+  .install-btn { font-family:'Barlow Condensed',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.1em; padding:5px 10px; background:var(--cyan-bg); border:1px solid rgba(0,200,255,0.3); border-radius:20px; color:var(--cyan); cursor:pointer; display:none; }
+  .install-btn.visible { display:block; }
 
-  /* ── Tab bar ── */
-  nav {
-    display: flex; flex-shrink: 0;
-    border-bottom: 1px solid var(--border2);
-    background: var(--bg-deep);
-  }
+  /* Nav */
+  nav { display: flex; flex-shrink: 0; border-bottom: 1px solid var(--border2); background: var(--bg-deep); }
   nav button {
     flex: 1; padding: 11px 4px; background: transparent; border: none;
     font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 700;
@@ -59,34 +62,29 @@
   }
   nav button.active { color: var(--cyan); border-bottom-color: var(--cyan); }
 
-  /* ── Scrollable content ── */
+  /* Main */
   main { flex: 1; overflow-y: auto; padding: 16px; -webkit-overflow-scrolling: touch; }
-
-  /* ── Section labels ── */
   .label { font-family: 'Barlow Condensed', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; color: var(--text-dim); margin-bottom: 6px; }
-
-  /* ── Card ── */
   .card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 14px; margin-bottom: 14px; }
 
-  /* ── Form controls ── */
+  /* Form controls */
   .field { margin-bottom: 12px; }
   .field .label { margin-bottom: 5px; }
   input[type="text"], input[type="date"], input[type="number"], select, textarea {
     width: 100%; background: var(--bg-input); border: 1px solid var(--border); border-radius: var(--radius);
     color: var(--text); font-family: 'Barlow', sans-serif; font-size: 14px; padding: 10px 12px;
-    outline: none; transition: border-color .2s;
-    -webkit-appearance: none; appearance: none;
+    outline: none; transition: border-color .2s; -webkit-appearance: none; appearance: none;
   }
   input:focus, select:focus { border-color: var(--cyan); }
   select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2300C8FF' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 32px; }
   input[type="date"]::-webkit-calendar-picker-indicator { filter: invert(1) opacity(0.4); }
 
-  /* ── Type toggle ── */
+  /* Type toggle */
   .type-toggle { display: flex; gap: 6px; }
   .type-btn { flex: 1; padding: 9px 4px; background: var(--bg-input); border: 1px solid var(--border); border-radius: var(--radius); font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: var(--text-dim); cursor: pointer; transition: all .2s; }
   .type-btn.active { background: var(--cyan-bg); border-color: var(--cyan); color: var(--cyan); }
 
-  /* ── Series table ── */
+  /* Series table */
   .series-table { background: var(--bg-input); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 10px; }
   .series-head { display: grid; padding: 7px 10px; border-bottom: 1px solid var(--border2); background: rgba(0,0,0,0.2); }
   .series-head span { font-family: 'Barlow Condensed', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: var(--text-dim); }
@@ -98,15 +96,11 @@
   .series-row input:focus { border-color: var(--cyan); }
   .del-btn { background: none; border: none; color: var(--text-muted); font-size: 18px; cursor: pointer; text-align: center; padding: 0; transition: color .2s; line-height: 1; }
   .del-btn:hover { color: var(--red); }
-
-  /* fuerza: # | kg | reps | × */
   .grid-fuerza { grid-template-columns: 22px 1fr 1fr 26px; }
-  /* cardio: # | min | km | × */
-  .grid-cardio { grid-template-columns: 22px 1fr 1fr 26px; }
-  /* corporal: # | reps | × */
+  .grid-cardio  { grid-template-columns: 22px 1fr 1fr 26px; }
   .grid-corporal { grid-template-columns: 22px 1fr 26px; }
 
-  /* ── Buttons ── */
+  /* Buttons */
   .btn { display: block; width: 100%; padding: 12px; border: none; border-radius: var(--radius); font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; cursor: pointer; transition: opacity .2s, transform .1s; }
   .btn:active { transform: scale(0.98); }
   .btn-primary { background: var(--cyan); color: #001a26; }
@@ -115,54 +109,103 @@
   .btn-row { display: flex; gap: 8px; margin-bottom: 10px; }
   .btn-row .btn { flex: 1; }
 
-  /* ── Today's session list ── */
-  .session-item { display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--border2); cursor: pointer; }
+  /* Session list */
+  .session-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border2); cursor: pointer; gap: 8px; }
   .session-item:last-child { border-bottom: none; }
-  .session-item .name { font-size: 13px; font-weight: 600; color: var(--text-mid); }
-  .session-item .meta { font-size: 12px; color: var(--cyan); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; letter-spacing: 0.04em; }
-  .session-item .del-session { background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:16px; padding:0 0 0 10px; transition:color .2s; }
-  .session-item .del-session:hover { color:var(--red); }
+  .session-item .si-left { flex:1; min-width:0; }
+  .session-item .name { font-size: 13px; font-weight: 600; color: var(--text-mid); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .session-item .meta { font-size: 12px; color: var(--cyan); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; letter-spacing: 0.04em; margin-top:2px; }
+  .session-item .si-actions { display:flex; align-items:center; gap:4px; flex-shrink:0; }
+  .view-btn { background:none; border:1px solid var(--border); border-radius:5px; color:var(--text-dim); cursor:pointer; font-size:11px; padding:4px 8px; font-family:'Barlow Condensed',sans-serif; font-weight:700; letter-spacing:0.08em; transition:all .2s; white-space:nowrap; }
+  .view-btn:hover { border-color:var(--cyan); color:var(--cyan); }
+  .del-session { background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:18px; padding:4px; transition:color .2s; line-height:1; }
+  .del-session:hover { color:var(--red); }
 
-  /* ── Machine list ── */
+  /* Detail drawer */
+  #detail-drawer {
+    position: fixed; inset: 0; z-index: 300;
+    display: flex; align-items: flex-end;
+    pointer-events: none; opacity: 0;
+    transition: opacity .25s;
+  }
+  #detail-drawer.open { pointer-events: all; opacity: 1; }
+  #detail-backdrop {
+    position: absolute; inset: 0;
+    background: rgba(0,0,0,0.7);
+  }
+  #detail-panel {
+    position: relative; z-index: 1;
+    width: 100%; max-width: 480px; margin: 0 auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-bottom: none;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    padding: 0 0 32px;
+    transform: translateY(100%);
+    transition: transform .3s cubic-bezier(.32,.72,0,1);
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  #detail-drawer.open #detail-panel { transform: translateY(0); }
+  .drawer-handle { width: 36px; height: 4px; background: var(--border); border-radius: 2px; margin: 12px auto 16px; }
+  .drawer-header { padding: 0 16px 14px; border-bottom: 1px solid var(--border2); display:flex; justify-content:space-between; align-items:flex-start; }
+  .drawer-title { font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:900; letter-spacing:0.04em; }
+  .drawer-date { font-size:11px; color:var(--text-dim); font-family:'Barlow Condensed',sans-serif; letter-spacing:0.08em; margin-top:3px; }
+  .drawer-close { background:none; border:none; color:var(--text-dim); font-size:22px; cursor:pointer; padding:0; line-height:1; }
+
+  .detail-sets { padding: 14px 16px; }
+  .detail-set-row { display:grid; gap:8px; padding:10px 0; border-bottom:1px solid var(--border2); align-items:center; }
+  .detail-set-row:last-child { border-bottom:none; }
+  .detail-grid-fuerza { grid-template-columns: 28px 1fr 1fr; }
+  .detail-grid-cardio  { grid-template-columns: 28px 1fr 1fr; }
+  .detail-grid-corporal { grid-template-columns: 28px 1fr; }
+  .detail-set-num { font-size:11px; color:var(--text-dim); font-family:'Barlow Condensed',sans-serif; font-weight:700; text-align:center; }
+  .detail-val { background:var(--bg-input); border-radius:6px; padding:9px 8px; text-align:center; }
+  .detail-val .dv-num { font-size:18px; font-weight:700; color:var(--text); font-family:'Barlow Condensed',sans-serif; }
+  .detail-val .dv-unit { font-size:10px; color:var(--text-dim); font-family:'Barlow Condensed',sans-serif; letter-spacing:0.1em; margin-top:1px; }
+  .detail-val.highlight .dv-num { color:var(--cyan); }
+  .detail-summary { padding:0 16px; display:flex; gap:8px; }
+  .detail-stat { flex:1; background:var(--bg-input); border-radius:var(--radius); padding:10px; text-align:center; }
+  .detail-stat .ds-val { font-size:20px; font-weight:900; font-family:'Barlow Condensed',sans-serif; color:var(--cyan); }
+  .detail-stat .ds-label { font-size:10px; color:var(--text-dim); font-family:'Barlow Condensed',sans-serif; letter-spacing:0.1em; margin-top:2px; }
+
+  /* Machine list */
   .machine-item { display: flex; justify-content: space-between; align-items: center; padding: 11px 14px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 8px; }
   .machine-item .mname { font-size: 14px; font-weight: 600; }
   .machine-item .mmeta { font-size: 11px; color: var(--text-dim); margin-top: 2px; font-family: 'Barlow Condensed', sans-serif; letter-spacing:0.06em; }
   .badge { font-size: 10px; padding: 3px 8px; border-radius: 20px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; letter-spacing: 0.08em; }
-  .badge-fuerza  { background: rgba(0,200,255,0.1); color: var(--cyan); border: 1px solid rgba(0,200,255,0.25); }
-  .badge-cardio  { background: rgba(255,180,0,0.1);  color: #FFB400; border: 1px solid rgba(255,180,0,0.25); }
-  .badge-corporal{ background: rgba(100,220,100,0.1);color: #50DD80; border: 1px solid rgba(100,220,100,0.25); }
+  .badge-fuerza   { background: rgba(0,200,255,0.1);  color: var(--cyan);  border: 1px solid rgba(0,200,255,0.25); }
+  .badge-cardio   { background: rgba(255,180,0,0.1);  color: #FFB400; border: 1px solid rgba(255,180,0,0.25); }
+  .badge-corporal { background: rgba(100,220,100,0.1);color: #50DD80; border: 1px solid rgba(100,220,100,0.25); }
   .machine-actions { display:flex; gap:6px; }
   .icon-btn { background:none; border:none; cursor:pointer; font-size:15px; color:var(--text-dim); padding:4px; transition:color .2s; }
   .icon-btn:hover { color:var(--cyan); }
   .icon-btn.del:hover { color:var(--red); }
 
-  /* ── Dashboard ── */
+  /* Dashboard */
   .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
   .stat-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; }
   .stat-card .stat-label { font-size: 10px; color: var(--text-dim); font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em; font-weight: 700; margin-bottom: 4px; }
-  .stat-card .stat-val { font-size: 26px; font-family: 'Barlow Condensed', sans-serif; font-weight: 900; color: var(--text); }
+  .stat-card .stat-val { font-size: 26px; font-family: 'Barlow Condensed', sans-serif; font-weight: 900; }
   .stat-card .stat-sub { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
-
   .chart-wrap { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 14px; margin-bottom: 14px; }
-  .chart-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+  .chart-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap; gap:6px; }
   .chart-title { font-family:'Barlow Condensed',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.1em; color:var(--text-mid); }
-
   .history-day { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 11px 14px; margin-bottom: 8px; }
-  .history-day-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; cursor:pointer; }
-  .history-day-date { font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:700; color:var(--text); letter-spacing:0.04em; }
+  .history-day-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+  .history-day-date { font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:700; letter-spacing:0.04em; }
   .history-day-count { font-size:11px; color:var(--text-dim); font-family:'Barlow Condensed',sans-serif; }
   .history-tags { display:flex; gap:5px; flex-wrap:wrap; }
   .history-tag { font-size:10px; padding:3px 8px; border-radius:20px; background:rgba(0,200,255,0.06); border:1px solid rgba(0,200,255,0.15); color:var(--text-mid); font-family:'Barlow Condensed',sans-serif; letter-spacing:0.06em; }
 
-  /* ── Toast ── */
-  #toast { position:fixed; bottom:80px; left:50%; transform:translateX(-50%) translateY(20px); background:var(--cyan); color:#001a26; padding:10px 20px; border-radius:30px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:13px; letter-spacing:0.1em; opacity:0; transition:all .3s; pointer-events:none; z-index:100; white-space:nowrap; }
+  /* Toast */
+  #toast { position:fixed; bottom:80px; left:50%; transform:translateX(-50%) translateY(20px); background:var(--cyan); color:#001a26; padding:10px 20px; border-radius:30px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:13px; letter-spacing:0.1em; opacity:0; transition:all .3s; pointer-events:none; z-index:400; white-space:nowrap; }
   #toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
 
-  /* ── Empty state ── */
   .empty { text-align:center; padding:30px 0; color:var(--text-dim); font-size:13px; }
 
-  /* ── Confirm modal ── */
-  #modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:200; align-items:center; justify-content:center; }
+  /* Confirm modal */
+  #modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:500; align-items:center; justify-content:center; }
   #modal-overlay.show { display:flex; }
   .modal-box { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:24px; width:280px; }
   .modal-box h3 { font-family:'Barlow Condensed',sans-serif; font-size:16px; font-weight:700; margin-bottom:8px; }
@@ -170,28 +213,61 @@
   .modal-actions { display:flex; gap:8px; }
 
   canvas { display:block; }
-
-  /* scrollbar */
   main::-webkit-scrollbar { width:3px; }
   main::-webkit-scrollbar-track { background:transparent; }
   main::-webkit-scrollbar-thumb { background:var(--border); border-radius:2px; }
+  #detail-panel::-webkit-scrollbar { width:3px; }
+  #detail-panel::-webkit-scrollbar-thumb { background:var(--border); border-radius:2px; }
 </style>
 </head>
 <body>
 <div id="app">
-
   <header>
-    <div class="logo">TRAIN<span>LOG</span></div>
-    <div class="header-date" id="header-date"></div>
+    <div class="logo-wrap">
+      <svg class="logo-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="64" height="64" rx="14" fill="#060d18"/>
+        <!-- dumbbell -->
+        <!-- bar -->
+        <rect x="18" y="29" width="28" height="6" rx="2" fill="#00C8FF"/>
+        <!-- left plate -->
+        <rect x="10" y="22" width="8" height="20" rx="2" fill="#00C8FF"/>
+        <!-- right plate -->
+        <rect x="46" y="22" width="8" height="20" rx="2" fill="#00C8FF"/>
+        <!-- left cap -->
+        <rect x="6" y="26" width="4" height="12" rx="2" fill="#0090bb"/>
+        <!-- right cap -->
+        <rect x="54" y="26" width="4" height="12" rx="2" fill="#0090bb"/>
+      </svg>
+      <div class="logo">TRAIN<span>LOG</span></div>
+    </div>
+    <div class="header-right">
+      <button class="install-btn" id="install-btn">&#8681; INSTALAR</button>
+      <div class="header-date" id="header-date"></div>
+    </div>
   </header>
-
   <nav>
     <button class="active" onclick="showTab('registro')">REGISTRO</button>
     <button onclick="showTab('maquinas')">MÁQUINAS</button>
     <button onclick="showTab('dashboard')">DASHBOARD</button>
   </nav>
-
   <main id="main-content"></main>
+</div>
+
+<!-- Detail drawer -->
+<div id="detail-drawer">
+  <div id="detail-backdrop"></div>
+  <div id="detail-panel">
+    <div class="drawer-handle"></div>
+    <div class="drawer-header">
+      <div>
+        <div class="drawer-title" id="dp-title"></div>
+        <div class="drawer-date" id="dp-date"></div>
+      </div>
+      <button class="drawer-close" onclick="closeDetail()">×</button>
+    </div>
+    <div id="dp-summary" class="detail-summary" style="padding-top:14px;padding-bottom:14px;"></div>
+    <div class="detail-sets" id="dp-sets"></div>
+  </div>
 </div>
 
 <div id="toast"></div>
@@ -207,6 +283,33 @@
 </div>
 
 <script>
+// ── PWA: Service Worker ────────────────────────────────
+if ('serviceWorker' in navigator) {
+  const swCode = atob('CmNvbnN0IENBQ0hFID0gJ3RyYWlubG9nLXYxJzsKc2VsZi5hZGRFdmVudExpc3RlbmVyKCdpbnN0YWxsJywgZSA9PiB7CiAgZS53YWl0VW50aWwoY2FjaGVzLm9wZW4oQ0FDSEUpLnRoZW4oYyA9PiBjLmFkZEFsbChbJy4nXSkpKTsKICBzZWxmLnNraXBXYWl0aW5nKCk7Cn0pOwpzZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2FjdGl2YXRlJywgZSA9PiB7IGUud2FpdFVudGlsKGNsaWVudHMuY2xhaW0oKSk7IH0pOwpzZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2ZldGNoJywgZSA9PiB7CiAgZS5yZXNwb25kV2l0aChjYWNoZXMubWF0Y2goZS5yZXF1ZXN0KS50aGVuKHIgPT4gciB8fCBmZXRjaChlLnJlcXVlc3QpLnRoZW4ocmVzID0+IHsKICAgIGNvbnN0IGNsb25lID0gcmVzLmNsb25lKCk7CiAgICBjYWNoZXMub3BlbihDQUNIRSkudGhlbihjID0+IGMucHV0KGUucmVxdWVzdCwgY2xvbmUpKTsKICAgIHJldHVybiByZXM7CiAgfSkpKTsKfSk7Cg==');
+  const blob = new Blob([swCode], {type:'text/javascript'});
+  const swUrl = URL.createObjectURL(blob);
+  navigator.serviceWorker.register(swUrl).catch(() => {});
+}
+
+// ── PWA: Install prompt ────────────────────────────────
+let deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById('install-btn').classList.add('visible');
+});
+document.getElementById('install-btn').addEventListener('click', async () => {
+  if (!deferredPrompt) return;
+  deferredPrompt.prompt();
+  const { outcome } = await deferredPrompt.userChoice;
+  deferredPrompt = null;
+  if (outcome === 'accepted') document.getElementById('install-btn').classList.remove('visible');
+});
+window.addEventListener('appinstalled', () => {
+  document.getElementById('install-btn').classList.remove('visible');
+  toast('¡APP INSTALADA!');
+});
+
 // ── State ──────────────────────────────────────────────
 const DB = {
   get machines() { return JSON.parse(localStorage.getItem('tl_machines') || '[]'); },
@@ -215,7 +318,6 @@ const DB = {
   set entries(v) { localStorage.setItem('tl_entries', JSON.stringify(v)); },
 };
 
-// Default machines if empty
 if (!DB.machines.length) {
   DB.machines = [
     { id: uid(), name: 'Press banca', type: 'fuerza', group: 'Pecho' },
@@ -229,14 +331,9 @@ function uid() { return Date.now().toString(36) + Math.random().toString(36).sli
 
 let currentTab = 'registro';
 let editingMachineId = null;
-let modalCallback = null;
-
-// Draft state for registro tab
 let draft = { date: today(), machineId: '', sets: [] };
 
-function today() {
-  return new Date().toISOString().slice(0,10);
-}
+function today() { return new Date().toISOString().slice(0,10); }
 
 function fmtDate(d) {
   const [y,m,day] = d.split('-');
@@ -252,7 +349,6 @@ function fmtDateShort(d) {
   return parseInt(day) + ' ' + months[m-1];
 }
 
-// ── Header date ────────────────────────────────────────
 document.getElementById('header-date').textContent = fmtDate(today()).toUpperCase();
 
 // ── Toast ──────────────────────────────────────────────
@@ -269,9 +365,79 @@ function showModal(title, msg, cb) {
   document.getElementById('modal-msg').textContent = msg;
   document.getElementById('modal-overlay').classList.add('show');
   document.getElementById('modal-confirm-btn').onclick = () => { closeModal(); cb(); };
-  modalCallback = cb;
 }
 function closeModal() { document.getElementById('modal-overlay').classList.remove('show'); }
+
+// ── Detail drawer ──────────────────────────────────────
+function openDetail(entryId) {
+  const entry = DB.entries.find(e => e.id === entryId);
+  if (!entry) return;
+  const mac = DB.machines.find(m => m.id === entry.machineId);
+  const type = mac ? mac.type : 'fuerza';
+  const name = mac ? mac.name : '?';
+
+  document.getElementById('dp-title').textContent = name.toUpperCase();
+  document.getElementById('dp-date').textContent = fmtDate(entry.date).toUpperCase();
+
+  // Summary stats
+  let summaryHtml = '';
+  if (type === 'cardio') {
+    const totMin = entry.sets.reduce((a,s) => a+(parseFloat(s.min)||0), 0);
+    const totKm  = entry.sets.reduce((a,s) => a+(parseFloat(s.km)||0), 0);
+    const pace   = totKm > 0 ? (totMin/totKm).toFixed(1) : '—';
+    summaryHtml = `
+      <div class="detail-stat"><div class="ds-val">${totMin.toFixed(0)}</div><div class="ds-label">MINUTOS</div></div>
+      <div class="detail-stat"><div class="ds-val">${totKm.toFixed(1)}</div><div class="ds-label">KM</div></div>
+      <div class="detail-stat"><div class="ds-val">${pace}</div><div class="ds-label">MIN/KM</div></div>`;
+  } else if (type === 'corporal') {
+    const totReps = entry.sets.reduce((a,s) => a+(parseInt(s.reps)||0), 0);
+    summaryHtml = `
+      <div class="detail-stat"><div class="ds-val">${entry.sets.length}</div><div class="ds-label">SERIES</div></div>
+      <div class="detail-stat"><div class="ds-val">${totReps}</div><div class="ds-label">REPS TOTAL</div></div>`;
+  } else {
+    const maxKg   = Math.max(...entry.sets.map(s => parseFloat(s.kg)||0));
+    const totVol  = entry.sets.reduce((a,s) => a+(parseFloat(s.kg)||0)*(parseInt(s.reps)||0), 0);
+    summaryHtml = `
+      <div class="detail-stat"><div class="ds-val">${entry.sets.length}</div><div class="ds-label">SERIES</div></div>
+      <div class="detail-stat"><div class="ds-val">${maxKg}</div><div class="ds-label">KG MÁX</div></div>
+      <div class="detail-stat"><div class="ds-val">${totVol.toFixed(0)}</div><div class="ds-label">VOL KG</div></div>`;
+  }
+  document.getElementById('dp-summary').innerHTML = summaryHtml;
+
+  // Sets detail
+  const maxKgVal = type === 'fuerza' ? Math.max(...entry.sets.map(s => parseFloat(s.kg)||0)) : null;
+  let setsHtml = '';
+  entry.sets.forEach((s, i) => {
+    if (type === 'cardio') {
+      setsHtml += `<div class="detail-set-row detail-grid-cardio">
+        <span class="detail-set-num">${i+1}</span>
+        <div class="detail-val"><div class="dv-num">${parseFloat(s.min)||0}</div><div class="dv-unit">MIN</div></div>
+        <div class="detail-val"><div class="dv-num">${parseFloat(s.km)||0}</div><div class="dv-unit">KM</div></div>
+      </div>`;
+    } else if (type === 'corporal') {
+      setsHtml += `<div class="detail-set-row detail-grid-corporal">
+        <span class="detail-set-num">${i+1}</span>
+        <div class="detail-val"><div class="dv-num">${parseInt(s.reps)||0}</div><div class="dv-unit">REPS</div></div>
+      </div>`;
+    } else {
+      const isMax = parseFloat(s.kg) === maxKgVal;
+      setsHtml += `<div class="detail-set-row detail-grid-fuerza">
+        <span class="detail-set-num">${i+1}</span>
+        <div class="detail-val ${isMax?'highlight':''}"><div class="dv-num">${parseFloat(s.kg)||0}</div><div class="dv-unit">KG</div></div>
+        <div class="detail-val"><div class="dv-num">${parseInt(s.reps)||0}</div><div class="dv-unit">REPS</div></div>
+      </div>`;
+    }
+  });
+  document.getElementById('dp-sets').innerHTML = setsHtml;
+
+  const drawer = document.getElementById('detail-drawer');
+  drawer.classList.add('open');
+  document.getElementById('detail-backdrop').onclick = closeDetail;
+}
+
+function closeDetail() {
+  document.getElementById('detail-drawer').classList.remove('open');
+}
 
 // ── Tab routing ────────────────────────────────────────
 function showTab(tab) {
@@ -284,8 +450,8 @@ function showTab(tab) {
 
 function render() {
   const m = document.getElementById('main-content');
-  if (currentTab === 'registro') m.innerHTML = renderRegistro();
-  if (currentTab === 'maquinas') m.innerHTML = renderMaquinas();
+  if (currentTab === 'registro')  m.innerHTML = renderRegistro();
+  if (currentTab === 'maquinas')  m.innerHTML = renderMaquinas();
   if (currentTab === 'dashboard') { m.innerHTML = renderDashboard(); initCharts(); }
   bindEvents();
 }
@@ -299,14 +465,11 @@ function getMachineType() {
 function renderRegistro() {
   const machines = DB.machines;
   const type = getMachineType();
-  const entries = DB.entries;
+  const todayEntries = DB.entries.filter(e => e.date === draft.date);
 
-  // Today's saved entries
-  const todayEntries = entries.filter(e => e.date === draft.date);
-
-  // Sets HTML
   let setsHtml = '';
-  const colClass = type === 'corporal' ? 'grid-corporal' : type === 'cardio' ? 'grid-cardio' : 'grid-fuerza';
+  const headStyle = type === 'corporal' ? 'grid-template-columns:22px 1fr 26px'
+    : 'grid-template-columns:22px 1fr 1fr 26px';
   const headCols = type === 'corporal'
     ? `<span></span><span>REPS</span><span></span>`
     : type === 'cardio'
@@ -315,20 +478,20 @@ function renderRegistro() {
 
   draft.sets.forEach((s, i) => {
     if (type === 'corporal') {
-      setsHtml += `<div class="series-row grid-corporal" data-i="${i}">
+      setsHtml += `<div class="series-row grid-corporal">
         <span class="num">${i+1}</span>
         <input type="number" placeholder="0" value="${s.reps||''}" data-field="reps" data-i="${i}" min="0">
         <button class="del-btn" data-del="${i}">×</button>
       </div>`;
     } else if (type === 'cardio') {
-      setsHtml += `<div class="series-row grid-cardio" data-i="${i}">
+      setsHtml += `<div class="series-row grid-cardio">
         <span class="num">${i+1}</span>
         <input type="number" placeholder="0" value="${s.min||''}" data-field="min" data-i="${i}" min="0" step="0.1">
         <input type="number" placeholder="0.0" value="${s.km||''}" data-field="km" data-i="${i}" min="0" step="0.01">
         <button class="del-btn" data-del="${i}">×</button>
       </div>`;
     } else {
-      setsHtml += `<div class="series-row grid-fuerza" data-i="${i}">
+      setsHtml += `<div class="series-row grid-fuerza">
         <span class="num">${i+1}</span>
         <input type="number" placeholder="0" value="${s.kg||''}" data-field="kg" data-i="${i}" min="0" step="0.5">
         <input type="number" placeholder="0" value="${s.reps||''}" data-field="reps" data-i="${i}" min="0">
@@ -337,7 +500,6 @@ function renderRegistro() {
     }
   });
 
-  // Today's session
   let sessionHtml = '';
   if (todayEntries.length) {
     sessionHtml = todayEntries.map(e => {
@@ -346,20 +508,25 @@ function renderRegistro() {
       const mtype = mac ? mac.type : 'fuerza';
       let meta = '';
       if (mtype === 'cardio') {
-        const totMin = e.sets.reduce((a,s) => a + (parseFloat(s.min)||0), 0);
-        const totKm  = e.sets.reduce((a,s) => a + (parseFloat(s.km)||0), 0);
+        const totMin = e.sets.reduce((a,s) => a+(parseFloat(s.min)||0), 0);
+        const totKm  = e.sets.reduce((a,s) => a+(parseFloat(s.km)||0), 0);
         meta = totMin.toFixed(0) + ' min · ' + totKm.toFixed(1) + ' km';
       } else if (mtype === 'corporal') {
-        const totReps = e.sets.reduce((a,s) => a + (parseInt(s.reps)||0), 0);
-        meta = totReps + ' reps · ' + e.sets.length + ' series';
+        const totReps = e.sets.reduce((a,s) => a+(parseInt(s.reps)||0), 0);
+        meta = totReps + ' reps · ' + e.sets.length + ' s';
       } else {
         const maxKg = Math.max(...e.sets.map(s => parseFloat(s.kg)||0));
-        meta = maxKg + ' kg · ' + e.sets.length + ' series';
+        meta = maxKg + ' kg · ' + e.sets.length + ' s';
       }
       return `<div class="session-item">
-        <span class="name">${name}</span>
-        <span class="meta">${meta}</span>
-        <button class="del-session" data-del-entry="${e.id}">×</button>
+        <div class="si-left">
+          <div class="name">${name}</div>
+          <div class="meta">${meta}</div>
+        </div>
+        <div class="si-actions">
+          <button class="view-btn" data-view-entry="${e.id}">VER</button>
+          <button class="del-session" data-del-entry="${e.id}">×</button>
+        </div>
       </div>`;
     }).join('');
   } else {
@@ -369,10 +536,6 @@ function renderRegistro() {
   const machineOptions = machines.length
     ? machines.map(m => `<option value="${m.id}" ${m.id===draft.machineId?'selected':''}>${m.name}</option>`).join('')
     : `<option value="">— añade máquinas primero —</option>`;
-
-  const headStyle = type === 'corporal' ? 'grid-template-columns:22px 1fr 26px'
-    : type === 'cardio' ? 'grid-template-columns:22px 1fr 1fr 26px'
-    : 'grid-template-columns:22px 1fr 1fr 26px';
 
   return `
   <div class="card">
@@ -385,20 +548,14 @@ function renderRegistro() {
       <select id="reg-machine">${machineOptions}</select>
     </div>
   </div>
-
   <div class="card">
     <div class="label" style="margin-bottom:10px">${type==='cardio'?'SESIÓN CARDIO':type==='corporal'?'SERIES (PESO CORPORAL)':'SERIES'}</div>
-    ${draft.sets.length ? `
-    <div class="series-table" id="series-table">
-      <div class="series-head" style="${headStyle}">${headCols}</div>
-      ${setsHtml}
-    </div>` : `<div class="empty" style="padding:14px 0">Sin series — añade una abajo</div>`}
+    ${draft.sets.length ? `<div class="series-table"><div class="series-head" style="${headStyle}">${headCols}</div>${setsHtml}</div>` : `<div class="empty" style="padding:14px 0">Sin series — añade una abajo</div>`}
     <div class="btn-row">
       <button class="btn btn-secondary" id="btn-add-set">+ SERIE</button>
       <button class="btn btn-primary" id="btn-save-entry">GUARDAR</button>
     </div>
   </div>
-
   <div class="card">
     <div class="label" style="margin-bottom:10px">SESIÓN DE HOY</div>
     ${sessionHtml}
@@ -410,7 +567,6 @@ function renderMaquinas() {
   const machines = DB.machines;
   const isEditing = !!editingMachineId;
   const editing = isEditing ? machines.find(m => m.id === editingMachineId) : null;
-
   const groups = ['Pecho','Espalda','Hombros','Bíceps','Tríceps','Piernas','Glúteos','Core','Cardio','Otro'];
 
   const listHtml = machines.length ? machines.map(m => `
@@ -422,8 +578,8 @@ function renderMaquinas() {
       <div style="display:flex;align-items:center;gap:8px;">
         <span class="badge badge-${m.type}">${m.type.toUpperCase()}</span>
         <div class="machine-actions">
-          <button class="icon-btn" data-edit-machine="${m.id}" title="Editar">✎</button>
-          <button class="icon-btn del" data-del-machine="${m.id}" title="Eliminar">×</button>
+          <button class="icon-btn" data-edit-machine="${m.id}">✎</button>
+          <button class="icon-btn del" data-del-machine="${m.id}">×</button>
         </div>
       </div>
     </div>`).join('') : `<div class="empty">Sin máquinas registradas</div>`;
@@ -445,16 +601,13 @@ function renderMaquinas() {
     </div>
     <div class="field">
       <div class="label">GRUPO MUSCULAR</div>
-      <select id="mac-group">
-        ${groups.map(g => `<option ${editing&&editing.group===g?'selected':''}>${g}</option>`).join('')}
-      </select>
+      <select id="mac-group">${groups.map(g => `<option ${editing&&editing.group===g?'selected':''}>${g}</option>`).join('')}</select>
     </div>
     <div class="btn-row">
       ${isEditing ? `<button class="btn btn-secondary" id="btn-cancel-edit">CANCELAR</button>` : ''}
       <button class="btn btn-primary" id="btn-save-machine">${isEditing ? 'ACTUALIZAR' : 'AÑADIR MÁQUINA'}</button>
     </div>
   </div>
-
   <div class="label" style="margin-bottom:8px">MÁQUINAS REGISTRADAS</div>
   ${listHtml}`;
 }
@@ -463,34 +616,21 @@ function renderMaquinas() {
 function renderDashboard() {
   const entries = DB.entries;
   const machines = DB.machines;
-
-  // Stats
   const now = new Date();
   const monthStart = new Date(now.getFullYear(), now.getMonth(), 1).toISOString().slice(0,10);
   const monthEntries = entries.filter(e => e.date >= monthStart);
   const monthDays = [...new Set(monthEntries.map(e => e.date))].length;
-
   const totalVol = entries
     .filter(e => { const m = machines.find(x=>x.id===e.machineId); return m && m.type==='fuerza'; })
-    .reduce((a,e) => a + e.sets.reduce((b,s) => b + (parseFloat(s.kg)||0)*(parseInt(s.reps)||0), 0), 0);
-
-  // Exercise selector options
-  const exOptions = machines.map(m =>
-    `<option value="${m.id}">${m.name}</option>`).join('');
-
-  // History
+    .reduce((a,e) => a + e.sets.reduce((b,s) => b+(parseFloat(s.kg)||0)*(parseInt(s.reps)||0), 0), 0);
+  const volFmt = totalVol >= 1000 ? (totalVol/1000).toFixed(1)+'k' : totalVol.toFixed(0);
+  const exOptions = machines.map(m => `<option value="${m.id}">${m.name}</option>`).join('');
   const byDate = {};
-  entries.forEach(e => {
-    if (!byDate[e.date]) byDate[e.date] = [];
-    byDate[e.date].push(e);
-  });
+  entries.forEach(e => { if (!byDate[e.date]) byDate[e.date] = []; byDate[e.date].push(e); });
   const sortedDates = Object.keys(byDate).sort((a,b) => b.localeCompare(a));
-  const historyHtml = sortedDates.slice(0,15).map(d => {
+  const historyHtml = sortedDates.slice(0,20).map(d => {
     const dayEntries = byDate[d];
-    const names = dayEntries.map(e => {
-      const m = machines.find(x=>x.id===e.machineId);
-      return m ? m.name : '?';
-    });
+    const names = dayEntries.map(e => { const m = machines.find(x=>x.id===e.machineId); return m ? m.name : '?'; });
     return `<div class="history-day">
       <div class="history-day-header">
         <span class="history-day-date">${fmtDate(d).toUpperCase()}</span>
@@ -499,8 +639,6 @@ function renderDashboard() {
       <div class="history-tags">${names.map(n=>`<span class="history-tag">${n}</span>`).join('')}</div>
     </div>`;
   }).join('') || `<div class="empty">Sin historial aún</div>`;
-
-  const volFmt = totalVol >= 1000 ? (totalVol/1000).toFixed(1)+'k' : totalVol.toFixed(0);
 
   return `
   <div class="stat-grid">
@@ -515,7 +653,6 @@ function renderDashboard() {
       <div class="stat-sub">kg levantados</div>
     </div>
   </div>
-
   <div class="chart-wrap">
     <div class="chart-header">
       <span class="chart-title">PROGRESO POR EJERCICIO</span>
@@ -524,7 +661,6 @@ function renderDashboard() {
     <canvas id="progress-chart" height="140"></canvas>
     <div id="chart-empty" class="empty" style="display:none">Sin datos para este ejercicio</div>
   </div>
-
   <div class="label" style="margin-bottom:8px">HISTORIAL DE ENTRENOS</div>
   ${historyHtml}`;
 }
@@ -541,26 +677,13 @@ function drawChart(machineId) {
   const entries = DB.entries.filter(e => e.machineId === machineId);
   const mac = DB.machines.find(m => m.id === machineId);
   const type = mac ? mac.type : 'fuerza';
-
   const canvas = document.getElementById('progress-chart');
   const emptyDiv = document.getElementById('chart-empty');
-
-  if (!entries.length) {
-    canvas.style.display = 'none';
-    emptyDiv.style.display = 'block';
-    return;
-  }
-  canvas.style.display = 'block';
-  emptyDiv.style.display = 'none';
-
-  // Group by date, take max/sum
+  if (!entries.length) { canvas.style.display='none'; emptyDiv.style.display='block'; return; }
+  canvas.style.display='block'; emptyDiv.style.display='none';
   const byDate = {};
-  entries.forEach(e => {
-    if (!byDate[e.date]) byDate[e.date] = [];
-    byDate[e.date].push(...e.sets);
-  });
+  entries.forEach(e => { if (!byDate[e.date]) byDate[e.date]=[]; byDate[e.date].push(...e.sets); });
   const sortedDates = Object.keys(byDate).sort();
-
   let labels, data, yLabel;
   if (type === 'cardio') {
     labels = sortedDates.map(fmtDateShort);
@@ -575,48 +698,28 @@ function drawChart(machineId) {
     data = sortedDates.map(d => Math.max(...byDate[d].map(s => parseFloat(s.kg)||0)));
     yLabel = 'kg';
   }
-
   if (chartInstance) chartInstance.destroy();
   chartInstance = new Chart(canvas, {
     type: 'line',
     data: {
       labels,
-      datasets: [{
-        data,
-        borderColor: '#00C8FF',
-        backgroundColor: 'rgba(0,200,255,0.06)',
-        borderWidth: 2,
-        pointBackgroundColor: '#00C8FF',
-        pointRadius: 4,
-        pointHoverRadius: 6,
-        tension: 0.3,
-        fill: true,
-      }]
+      datasets: [{ data, borderColor:'#00C8FF', backgroundColor:'rgba(0,200,255,0.06)', borderWidth:2,
+        pointBackgroundColor:'#00C8FF', pointRadius:4, pointHoverRadius:6, tension:0.3, fill:true }]
     },
     options: {
-      responsive: true,
+      responsive:true,
       plugins: {
-        legend: { display: false },
+        legend: {display:false},
         tooltip: {
-          backgroundColor: '#0b1826',
-          borderColor: '#1a3a52',
-          borderWidth: 1,
-          titleColor: '#8ab0c8',
-          bodyColor: '#00C8FF',
-          bodyFont: { family: 'Barlow Condensed', weight: '700', size: 14 },
-          callbacks: { label: ctx => ctx.parsed.y.toFixed(1) + ' ' + yLabel }
+          backgroundColor:'#0b1826', borderColor:'#1a3a52', borderWidth:1,
+          titleColor:'#8ab0c8', bodyColor:'#00C8FF',
+          bodyFont:{family:'Barlow Condensed',weight:'700',size:14},
+          callbacks: {label: ctx => ctx.parsed.y.toFixed(1)+' '+yLabel}
         }
       },
       scales: {
-        x: {
-          grid: { color: 'rgba(26,58,82,0.5)' },
-          ticks: { color: '#3a6a80', font: { family: 'Barlow Condensed', size: 10 } }
-        },
-        y: {
-          grid: { color: 'rgba(26,58,82,0.5)' },
-          ticks: { color: '#3a6a80', font: { family: 'Barlow Condensed', size: 10 },
-            callback: v => v + ' ' + yLabel }
-        }
+        x: { grid:{color:'rgba(26,58,82,0.5)'}, ticks:{color:'#3a6a80',font:{family:'Barlow Condensed',size:10}} },
+        y: { grid:{color:'rgba(26,58,82,0.5)'}, ticks:{color:'#3a6a80',font:{family:'Barlow Condensed',size:10},callback:v=>v+' '+yLabel} }
       }
     }
   });
@@ -624,55 +727,48 @@ function drawChart(machineId) {
 
 // ── Event binding ──────────────────────────────────────
 function bindEvents() {
-  // Date change
   const regDate = document.getElementById('reg-date');
   if (regDate) regDate.addEventListener('change', e => { draft.date = e.target.value; render(); });
 
-  // Machine change
   const regMac = document.getElementById('reg-machine');
   if (regMac) {
-    if (!draft.machineId && regMac.value) { draft.machineId = regMac.value; }
+    if (!draft.machineId && regMac.value) draft.machineId = regMac.value;
     regMac.addEventListener('change', e => { draft.machineId = e.target.value; draft.sets = []; render(); });
   }
 
-  // Add set
   const btnAdd = document.getElementById('btn-add-set');
   if (btnAdd) btnAdd.addEventListener('click', () => { draft.sets.push({}); render(); });
 
-  // Del set
   document.querySelectorAll('[data-del]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      draft.sets.splice(parseInt(btn.dataset.del), 1);
-      render();
-    });
+    btn.addEventListener('click', () => { draft.sets.splice(parseInt(btn.dataset.del), 1); render(); });
   });
 
-  // Input changes in sets
   document.querySelectorAll('.series-row input').forEach(inp => {
     inp.addEventListener('input', e => {
-      const i = parseInt(e.target.dataset.i);
-      const field = e.target.dataset.field;
-      draft.sets[i][field] = e.target.value;
+      draft.sets[parseInt(e.target.dataset.i)][e.target.dataset.field] = e.target.value;
     });
   });
 
-  // Save entry
   const btnSave = document.getElementById('btn-save-entry');
   if (btnSave) btnSave.addEventListener('click', saveEntry);
 
-  // Del entry from today
+  // View entry detail
+  document.querySelectorAll('[data-view-entry]').forEach(btn => {
+    btn.addEventListener('click', e => { e.stopPropagation(); openDetail(btn.dataset.viewEntry); });
+  });
+
+  // Del entry
   document.querySelectorAll('[data-del-entry]').forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
       showModal('Eliminar registro', '¿Eliminar este ejercicio del historial?', () => {
-        const entries = DB.entries.filter(e => e.id !== btn.dataset.delEntry);
-        DB.entries = entries;
-        render();
-        toast('REGISTRO ELIMINADO');
+        DB.entries = DB.entries.filter(e => e.id !== btn.dataset.delEntry);
+        render(); toast('REGISTRO ELIMINADO');
       });
     });
   });
 
-  // Machine form - type toggle
+  // Machine type toggle
   let selectedType = 'fuerza';
   const typeBtns = document.querySelectorAll('.type-btn');
   typeBtns.forEach(btn => {
@@ -684,7 +780,6 @@ function bindEvents() {
     });
   });
 
-  // Save machine
   const btnSaveMac = document.getElementById('btn-save-machine');
   if (btnSaveMac) btnSaveMac.addEventListener('click', () => {
     const name = document.getElementById('mac-name').value.trim();
@@ -694,27 +789,22 @@ function bindEvents() {
     if (editingMachineId) {
       const idx = machines.findIndex(m => m.id === editingMachineId);
       machines[idx] = { ...machines[idx], name, type: selectedType, group };
-      DB.machines = machines;
       editingMachineId = null;
       toast('MÁQUINA ACTUALIZADA');
     } else {
       machines.push({ id: uid(), name, type: selectedType, group });
-      DB.machines = machines;
       toast('MÁQUINA AÑADIDA');
     }
-    render();
+    DB.machines = machines; render();
   });
 
-  // Cancel edit
   const btnCancel = document.getElementById('btn-cancel-edit');
   if (btnCancel) btnCancel.addEventListener('click', () => { editingMachineId = null; render(); });
 
-  // Edit machine
   document.querySelectorAll('[data-edit-machine]').forEach(btn => {
     btn.addEventListener('click', () => { editingMachineId = btn.dataset.editMachine; render(); });
   });
 
-  // Del machine
   document.querySelectorAll('[data-del-machine]').forEach(btn => {
     btn.addEventListener('click', () => {
       const m = DB.machines.find(x => x.id === btn.dataset.delMachine);
@@ -730,24 +820,15 @@ function bindEvents() {
 function saveEntry() {
   if (!draft.machineId) { toast('SELECCIONA UN EJERCICIO'); return; }
   if (!draft.sets.length) { toast('AÑADE AL MENOS UNA SERIE'); return; }
-
   const type = getMachineType();
-  // Validate sets have some data
   const valid = draft.sets.every(s => {
-    if (type === 'cardio') return (s.min || s.km);
+    if (type === 'cardio') return s.min || s.km;
     if (type === 'corporal') return s.reps;
     return s.kg && s.reps;
   });
   if (!valid) { toast('COMPLETA LAS SERIES'); return; }
-
   const entries = DB.entries;
-  entries.push({
-    id: uid(),
-    date: draft.date,
-    machineId: draft.machineId,
-    sets: [...draft.sets],
-    ts: Date.now()
-  });
+  entries.push({ id: uid(), date: draft.date, machineId: draft.machineId, sets: [...draft.sets], ts: Date.now() });
   DB.entries = entries;
   draft.sets = [];
   render();
